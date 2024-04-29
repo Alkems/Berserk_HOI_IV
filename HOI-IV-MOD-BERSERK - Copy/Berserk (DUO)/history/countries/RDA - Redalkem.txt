@@ -1,0 +1,86 @@
+﻿capital = 46
+
+oob = "RDA_Army"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 2
+}
+
+set_convoys = 200
+
+1936.1.1 = {
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+	}
+}
+
+set_research_slots = 4
+set_stability = 1
+set_war_support = 1
+add_command_power = 50
+add_political_power = 200
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
+}
+
+create_country_leader = {
+	name = "Alkem"
+	desc = "Nicknamed Triple A. He is a great ruler and a rutheless one at that."
+	picture = "alkem.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 25
+		fascism = 20
+		communism = 5
+		neutrality = 50
+	}
+}
+
+create_faction = Eclipse
+add_to_faction = RDA
+add_to_faction = FAL

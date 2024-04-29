@@ -1,0 +1,17 @@
+add_namespace = rdafal2
+
+country_event = {
+    id = rdafal2.puppet_latvia
+    title = "Puppeting Latvia"
+    desc = "We have managed to install a puppet government in Latvia."
+    picture = GFX_evt_generic_signing_document
+
+    is_triggered_only = yes
+
+    option = {
+        name = "They will now follow our lead."
+        ROOT = {
+            puppet = LAT
+        }
+    }
+}

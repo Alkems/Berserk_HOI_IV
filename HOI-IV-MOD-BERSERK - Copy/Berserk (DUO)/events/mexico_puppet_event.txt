@@ -1,0 +1,17 @@
+add_namespace = rdafal4
+
+country_event = {
+    id = rdafal4.puppet_mexico
+    title = "Puppeting Mexico"
+    desc = "We have managed to install a puppet government in Mexico."
+    picture = GFX_evt_generic_signing_document
+
+    is_triggered_only = yes
+
+    option = {
+        name = "They will now follow our lead."
+        ROOT = {
+            puppet = MEX
+        }
+    }
+}
